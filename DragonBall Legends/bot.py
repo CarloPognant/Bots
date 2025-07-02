@@ -37,7 +37,7 @@ def click(x, y, delay=0.5):
     time.sleep(delay)
 
 # ✅ OCR integrato nel file
-def wait_for_ok_text(area, timeout=180):
+def wait_for_ok_text(area, timeout=240):
     start_time = time.time()
     while time.time() - start_time < timeout:
         x, y, w, h = area
