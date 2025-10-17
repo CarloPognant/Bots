@@ -21,6 +21,9 @@ while True:
     else:
         if keyboard.is_pressed('q'):
             print("Inizio combo con arts...")
+            keyboard.press('g')
+            keyboard.release('g')
+            time.sleep(1.5)
             keyboard.press('w')
             time.sleep(0.15)
             keyboard.release('w')
@@ -28,6 +31,8 @@ while True:
             keyboard.press('space')
             time.sleep(0.5)
             keyboard.release('space')
+            keyboard.press('h')
+            keyboard.release('h')
         elif keyboard.is_pressed('esc'):
             print("Uscita dal programma...")
             break

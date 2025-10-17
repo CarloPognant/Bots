@@ -1,1 +1,0 @@
-Questo è una prima bozza di un progetto molto grande che serverià per molte cose, per il momento può solo giocare alla storia, con delle interruzioni e senza completare tutte le missioni. Spero che continuerai a farlo e prima o poi, diventerà un grande progetto.

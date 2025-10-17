@@ -6,6 +6,8 @@ import cv2
 import numpy as np
 from PIL import ImageGrab
 import os
+from color_combat import click_color_cards
+
 
 # === CONFIG ===
 pytesseract.pytesseract.tesseract_cmd = r"C:/Program Files/Tesseract-OCR/tesseract.exe"
@@ -131,7 +133,11 @@ def run_battle_cycle():
         print("🟢 Clicking Ready...")
         click(*CONFIG["ready_button"])
 
-        print("⏳ Waiting for battle to finish and 'OK' to appear...")
+        print("⚔️ Inizio combattimento automatico...")
+        click_color_cards(CONFIG["card_area"])
+
+        print("⏳ Attendo la fine battaglia e 'OK'...")
+
         if not wait_for_ok_text(CONFIG["ok_area"]):
             print("❌ Timeout waiting for OK.")
         else:
